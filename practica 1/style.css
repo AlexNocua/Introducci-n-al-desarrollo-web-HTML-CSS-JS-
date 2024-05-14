@@ -1,0 +1,108 @@
+/* todas las importaciones tiene que ir arriba */
+/* @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dancing+Script:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+HK:wght@100..900&family=Princess+Sofia&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dancing+Script:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+HK:wght@100..900&family=Princess+Sofia&display=swap');
+
+
+html, body {
+    background-color: #000000;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Caveat", cursive; 
+   /* font-family: "Dancing Script", cursive; */
+}
+
+/* creacion de los estilos de nuestra targeta */
+h2, h4, p {
+    margin: 8px;
+}
+
+h2 {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+h4{
+    font-size: 18px;
+    font-weight: 600;
+}
+p{
+    font-weight: 500;
+    font-size: 16px;
+}
+
+#tarjeta {
+    background: linear-gradient(90deg, rgb(255, 255, 255), rgb(255, 255, 255) 60%);
+    width: 500px;
+    height: 320px;
+    border-radius: 12px;
+    overflow: hidden;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+.img {
+    z-index: 100;
+    position: absolute;
+    justify-content: center;
+    display: flex;
+    right: 50%;
+
+
+}
+
+.img img {
+    position: absolute;
+    display: flex;
+    top: 1rem;
+    width: 220px;
+    height: 200px;
+    opacity: 0.2;
+    z-index: 1;
+}
+
+
+
+.contenedor {
+    width: 100%;
+    height: 75%;
+    display: flex;
+
+}
+
+.informacion {
+
+    padding: 12px;
+    z-index: 100;
+    width: 50%;
+    /* background: red; */
+}
+
+.imagenMia {
+    padding: 4px;
+    margin-top: 30px;
+    margin-right: 8px;
+    display: flex;
+    justify-content: end;
+    width: 50%;
+    /* background: rgb(29, 148, 16); */
+}
+
+.imagenMia img {
+
+    width: 100%;
+    height: 100%;
+    mask-image: linear-gradient(rgb(255, 255, 255) 70%, transparent);
+}
+
+.footer {
+    border-top: 3px solid #ffffff;
+    background: rgb(25 37 67);
+    height: 25%;
+    text-align: center;
+    box-shadow: 0px -13px 20px 0px #293335;
+    color: aliceblue;
+}

@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dancing+Script:wght@400..700&family=Encode+Sans+Semi+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+HK:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Press+Start+2P&family=Princess+Sofia&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+html, body {
+    font-family: "Nunito", sans-serif;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.contenido {
+    display: flex;
+    border-radius: 12px;
+    padding: 0px;
+    background: linear-gradient(240deg, #000000, #111);
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    animation: animacion 10s infinite;
+    -webkit-animation: animacion 10s infinite;
+}
+
+/* Ejemplo de animaciones */
+/* 
+@keyframes animacion {
+
+
+    0% {
+        opacity: 0;
+        transform: scale(.06) ;
+        -webkit-transform: scale(.06) ;
+        -moz-transform: scale(.06) ;
+        -ms-transform: scale(.06) ;
+        -o-transform: scale(.06) ;
+}
+
+    50% {
+        transform: scale(1.06) ;
+        -webkit-transform: scale(1.06) ;
+        -moz-transform: scale(1.06) ;
+        -ms-transform: scale(1.06) ;
+        -o-transform: scale(1.06) ;
+        opacity: 1;
+}
+
+    100% {
+        opacity: 0;
+        transform: scale(.2) rotate(720deg);
+        -webkit-transform: scale(.2) rotate(720deg);
+        -moz-transform: scale(.2) rotate(720deg);
+        -ms-transform: scale(.2) rotate(720deg);
+        -o-transform: scale(.2) rotate(720deg);
+}
+} */
+
+.tarjeta {
+
+    overflow: hidden;
+    padding: 12px;
+    display: flex;
+    width: 510px;
+    height: 257px;
+    border-radius: 12% 20% 12%;
+    -webkit-border-radius: 12% 20% 12%;
+    -moz-border-radius: 12% 20% 12%;
+    -ms-border-radius: 12% 20% 12%;
+    -o-border-radius: 12% 20% 12%;
+}
+
+
+
+
+/* parte de ajustes del contenedor de la imagen e informacion */
+.tarjeta .section_imagen, .Section_information {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    width: 50%;
+}
+
+.tarjeta .section_imagen {
+    display: flex;
+    overflow: hidden;
+}
+
+.tarjeta .section_imagen .imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+.tarjeta .section_imagen img {
+    position: relative;
+    bottom: 40px;
+    z-index: 0;
+    mask-image: linear-gradient(rgb(255, 255, 255) 60%, transparent);
+    max-width: 320px;
+    border-radius: 20px;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+}
+
+.tarjeta .section_imagen img:hover {
+    transform: scale(2.0);
+    -webkit-transform: scale(2.0);
+    -moz-transform: scale(2.0);
+    -ms-transform: scale(2.0);
+    -o-transform: scale(2.0);
+}
+
+.tarjeta .section_imagen h1, h5, ul, h2 {
+
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.tarjeta .section_imagen .text {
+    padding: 6px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    z-index: 100;
+    background: #111;
+    border-radius: 22px;
+    -webkit-border-radius: 22px;
+    -moz-border-radius: 22px;
+    -ms-border-radius: 22px;
+    -o-border-radius: 22px;
+}
+
+.tarjeta .section_imagen h1 {
+    color: rgb(158, 158, 158);
+    font-size: larger;
+}
+
+.tarjeta .section_imagen h5 {
+    color: rgb(119, 119, 119);
+    font-size: 12px;
+}
+
+/* configuracion de la seccion de informacion */
+.tarjeta .Section_information {
+    box-shadow: inset 0 0 0 0 red;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+    background: #505050;
+}
+
+.especializaciones {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.especializaciones ul {
+    margin: 0 60px;
+    color: #a7a7a7;
+}
+
+.especializaciones h2 {
+    font-size: 14px;
+    margin: 4px 0;
+    text-align: center;
+    color: #e6e6e6;
+}
+
+.especializaciones h5 {
+    font-size: 18px;
+    color: #a7a7a7;
+}
+
+
+.tarjeta .informacion_contacto {
+    width: 100%;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.tarjeta .Section_information button {
+    font-family: "Nunito", sans-serif;
+    color: aliceblue;
+    padding: 4px 8px;
+    margin: 4px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #2b2b2b81;
+    border: solid 1px rgb(128, 128, 128);
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+}
+
+
+.tarjeta .Section_information button:hover {
+    background-color: #e6e6e6;
+    color: #2b2b2b;
+}
+
+.tarjeta .informacion_contacto svg {
+    width: 25px;
+    color: #fff;
+    border-radius: 50%;
+    padding: 8px;
+    background: #2b2b2b;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+}
+
+
+
+
+
+.tarjeta .informacion_contacto svg:nth-child(2):hover {
+    background: rgb(24, 22, 22);
+}
+
+.tarjeta .informacion_contacto svg:nth-child(3) {
+    background: rgb(138, 138, 138);
+}
+
+.tarjeta .informacion_contacto span {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
